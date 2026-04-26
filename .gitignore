@@ -1,0 +1,25 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local-only secrets, if any (never commit Formspree IDs you want kept)
+.env
+.env.local
+
+# Big binaries — keep masters out of the repo, host video on Cloudflare R2 / Mux / Bunny
+assets/videos/*.mp4
+assets/videos/*.webm
+assets/videos/*.mov
+assets/audio/*.wav
+assets/audio/*.flac
+
+# Allow these even if the patterns above match
+!assets/videos/.gitkeep
+!assets/audio/.gitkeep
